@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-white);
+  background-image: linear-gradient(
+      var(--color-pantone-400-a30) 2px,
+      transparent 2px
+    ),
+    linear-gradient(90deg, var(--color-pantone-400-a30) 2px, transparent 2px),
+    linear-gradient(var(--color-pantone-400-a30) 1px, transparent 1px),
+    linear-gradient(
+      90deg,
+      var(--color-pantone-400-a30) 1px,
+      var(--color-background) 1px
+    );
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+
+  //font
+  font-family: "Afacad Flux", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+svg {
+  display: block;
+  width: 100%;
+}
+
+:root {
+  --color-background: #0f1718;
+
+  --color-white: white;
+  --color-black: #020202;
+
+  --color-pantone-400: #0eccad;
+  --color-pantone-400-a30: #0eccac0b;
+
+  --border-rounded: 1rem;
+  --border-circle: 1000rem;
+}
+
+//typography
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Orbitron:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap");
+
+.type {
+  &--orbitron {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+}
+
+//pages
+@import "./pages/home.scss";
