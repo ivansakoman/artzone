@@ -2,6 +2,7 @@ import Artzone from "../assets/svg/artzone";
 import ParallaxText from "../components/parallax-text";
 import facebook from "../assets/png/facebook.png";
 import instagram from "../assets/png/instagram.png";
+import Slider from "../components/slider";
 
 const Home = () => {
   return (
@@ -25,6 +26,17 @@ const Home = () => {
         <ParallaxText baseVelocity={-3}>Coming soon</ParallaxText>
         <ParallaxText baseVelocity={3}>Print i Hidrografika</ParallaxText>
       </section>
+      <div className="slider__wrapper">
+        <Slider />
+        <div>
+          <h1 className="slider__title">Our work</h1>
+          <p className="slider__description">
+            Artzone offers custom t-shirt prints, all kinds of prints, 3D
+            printing, and personalized stickers. Bring your ideas to life with
+            our high-quality, tailored printing services.
+          </p>
+        </div>
+      </div>
     </>
   );
 };

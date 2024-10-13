@@ -9,6 +9,9 @@
 
   &__wrapper {
     height: 50vh;
+    @media (max-width: 750px) {
+      height: 40vh;
+    }
   }
   &__scroller {
     font-weight: 600;
