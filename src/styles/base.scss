@@ -55,5 +55,8 @@ svg {
   }
 }
 
+//components
+@import "./components/parallax-text.scss";
+
 //pages
 @import "./pages/home.scss";
