@@ -1,0 +1,9 @@
+.tab {
+  display: flex;
+  gap: 1rem;
+  &__item {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

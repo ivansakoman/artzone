@@ -3,6 +3,7 @@ import ParallaxText from "../components/parallax-text";
 import facebook from "../assets/png/facebook.png";
 import instagram from "../assets/png/instagram.png";
 import Slider from "../components/slider";
+import Services from "../components/services";
 
 const Home = () => {
   return (
@@ -37,6 +38,7 @@ const Home = () => {
           </p>
         </div>
       </div>
+      <Services />
     </>
   );
 };
