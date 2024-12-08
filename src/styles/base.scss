@@ -24,6 +24,7 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings: "slnt" 0;
+  overflow-x: hidden;
 }
 svg,
 img {
@@ -38,10 +39,17 @@ img {
   --color-black: #020202;
 
   --color-pantone-400: #0eccad;
+  --color-yellow-400: #f4ff00;
   --color-pantone-400-a30: #0eccac0b;
 
   --border-rounded: 1rem;
   --border-circle: 1000rem;
+
+  --font-size-base: 18px;
+  --font-size-md: 24px;
+  --font-size-lg: 42px;
+  --font-size-xl: 52px;
+  --font-size-2xl: 64px;
 }
 
 //typography
@@ -57,6 +65,7 @@ img {
 }
 
 //components
+@import "./components/contact.scss";
 @import "./components/parallax-text.scss";
 @import "./components/services.scss";
 @import "./components/slider.scss";

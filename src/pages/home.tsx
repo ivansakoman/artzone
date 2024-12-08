@@ -4,6 +4,7 @@ import facebook from "../assets/png/facebook.png";
 import instagram from "../assets/png/instagram.png";
 import Slider from "../components/slider";
 import Services from "../components/services";
+import Contact from "../components/contact";
 
 const Home = () => {
   return (
@@ -39,6 +40,7 @@ const Home = () => {
         </div>
       </div>
       <Services />
+      <Contact />
     </>
   );
 };
