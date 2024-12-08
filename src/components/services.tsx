@@ -1,5 +1,6 @@
 import { useState } from "react";
 import servicePrint from "../assets/jpeg/service-print.jpg";
+import serviceHydro from "../assets/jpeg/gallery-4.jfif";
 import serviceMerch from "../assets/jpeg/service-merch.jpg";
 import TabContent from "./service-tab";
 import { AnimatePresence } from "framer-motion";
@@ -14,24 +15,24 @@ export type ServiceType = {
 
 const data: ServiceType[] = [
   {
-    id: "print",
-    tab: "PRINT",
-    img: servicePrint,
+    id: "hidrografika",
+    tab: "HIDROGRAGIKA",
+    img: serviceHydro,
     title: "Hidrografika – transformacija površina u umjetnička djela!",
     description:
       "Hidrografika ili prijenos vode je tehnika koja omogućuje personalizaciju gotovo bilo koje površine. Bez obzira na to želite li unikatni dizajn za auto dijelove, kacige, kućanske predmete ili namještaj – mi smo tu da ispunimo vašu viziju!",
   },
   {
-    id: "sublimacije",
-    tab: "SUBLIMACIJE",
+    id: "print",
+    tab: "PRINT",
     img: serviceMerch,
     title: "Print koji privlači pažnju!",
     description:
       "Od tiskanih materijala za vaše poslovanje do personaliziranih proizvoda za posebne prilike, nudimo kvalitetan print koji se ističe. Uz najnoviju tehnologiju osiguravamo oštre boje i trajnost.",
   },
   {
-    id: "hidrografika",
-    tab: "HIDROGRAGIKA",
+    id: "sublimacije",
+    tab: "SUBLIMACIJE",
     img: servicePrint,
     title: "Sublimacija – personalizacija na novoj razini!",
     description:
@@ -44,6 +45,7 @@ const Services = () => {
 
   const handleActiveTab = (activeId: string) => {
     const currentItem = data.find((item) => item.id === activeId);
+    console.log(currentItem);
     if (currentItem) {
       setActiveTab(currentItem);
     } else {
