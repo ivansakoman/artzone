@@ -7,6 +7,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 10rem;
     margin-bottom: 20vh;
+    overflow: hidden;
 
     @media (max-width: 95em) {
       gap: 4rem;
