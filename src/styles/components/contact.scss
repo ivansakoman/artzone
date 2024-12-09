@@ -38,6 +38,9 @@
       @media (max-width: 64em) {
         text-align: center;
       }
+      @media (max-width: 54em) {
+        font-size: var(--font-size-md);
+      }
     }
     &--btn {
       display: flex;
