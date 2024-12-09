@@ -3,6 +3,8 @@ import ParallaxText from "../components/parallax-text";
 import facebook from "../assets/png/facebook.png";
 import instagram from "../assets/png/instagram.png";
 import Slider from "../components/slider";
+import Services from "../components/services";
+import Contact from "../components/contact";
 
 const Home = () => {
   return (
@@ -28,7 +30,7 @@ const Home = () => {
       </section>
       <div className="slider__wrapper">
         <Slider />
-        <div>
+        <div className="slider__content">
           <h1 className="slider__title">Our work</h1>
           <p className="slider__description">
             Artzone offers custom t-shirt prints, all kinds of prints, 3D
@@ -37,6 +39,8 @@ const Home = () => {
           </p>
         </div>
       </div>
+      <Services />
+      <Contact />
     </>
   );
 };
