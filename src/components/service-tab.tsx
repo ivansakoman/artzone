@@ -35,6 +35,7 @@ const TabContent = ({ data }: Props) => {
       </motion.div>
       <div className="services__item__img">
         <motion.img
+          loading="eager"
           key={data.id}
           src={data.img}
           variants={variants}
