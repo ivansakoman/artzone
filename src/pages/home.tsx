@@ -31,11 +31,14 @@ const Home = () => {
       <div className="slider__wrapper">
         <Slider />
         <div className="slider__content">
-          <h1 className="slider__title">Our work</h1>
+          <h1 className="slider__title">Naši radovi</h1>
           <p className="slider__description">
-            Artzone offers custom t-shirt prints, all kinds of prints, 3D
-            printing, and personalized stickers. Bring your ideas to life with
-            our high-quality, tailored printing services.
+            Artzone je mjesto gdje vaše ideje postaju stvarnost kroz prilagođene
+            otiske na majicama, personalizirane naljepnice, visokokvalitetni 3D
+            ispis i razne vrste tiska. Uz stručnost, kreativnost i vrhunsku
+            tehnologiju, stvaramo jedinstvene proizvode koji savršeno odgovaraju
+            vašim potrebama, bilo da se radi o poklonima, suvenirima ili
+            promotivnim materijalima.
           </p>
         </div>
       </div>
