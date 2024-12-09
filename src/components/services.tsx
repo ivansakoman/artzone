@@ -55,23 +55,23 @@ const Services = () => {
 
   return (
     <>
+      <div className="tab">
+        {data.map((service) => {
+          return (
+            <>
+              <div
+                className={`tab__item ${
+                  service.id === activeTab.id ? "active" : ""
+                }`}
+                onClick={() => handleActiveTab(service.id)}
+              >
+                {service.tab}
+              </div>
+            </>
+          );
+        })}
+      </div>
       <div className="services__wrapper">
-        <div className="tab">
-          {data.map((service) => {
-            return (
-              <>
-                <div
-                  className={`tab__item ${
-                    service.id === activeTab.id ? "active" : ""
-                  }`}
-                  onClick={() => handleActiveTab(service.id)}
-                >
-                  {service.tab}
-                </div>
-              </>
-            );
-          })}
-        </div>
         <div className="tab__content">
           <AnimatePresence>
             <TabContent data={activeTab} />

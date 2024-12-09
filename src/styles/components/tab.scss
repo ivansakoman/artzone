@@ -6,8 +6,6 @@
   @media (max-width: 54em) {
     gap: 3rem;
     justify-content: flex-start;
-    margin-left: -32px;
-    width: calc(100% + 64px);
   }
   &::-webkit-scrollbar {
     display: none;
@@ -26,10 +24,10 @@
       font-size: 36px;
 
       &:first-child {
-        margin-left: 3rem;
+        margin-left: 2rem;
       }
       &:last-child {
-        margin-right: 3rem;
+        margin-right: 2rem;
       }
     }
 
