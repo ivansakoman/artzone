@@ -2,6 +2,16 @@
   display: flex;
   justify-content: center;
   gap: 4rem;
+  overflow-x: auto;
+  @media (max-width: 54em) {
+    gap: 3rem;
+    justify-content: flex-start;
+    margin-left: -32px;
+    width: calc(100% + 64px);
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   &__item {
     position: relative;
@@ -10,7 +20,16 @@
     font-size: var(--font-size-lg);
     opacity: 0.8;
     font-weight: 200;
+    @media (max-width: 54em) {
+      font-size: 36px;
+    }
 
+    &:first-child {
+      margin-left: 3rem;
+    }
+    &:last-child {
+      margin-right: 3rem;
+    }
     &:hover {
       transform: scaleX(1.15);
       font-weight: 400;
@@ -41,5 +60,8 @@
   }
   &__content {
     margin-top: 7rem;
+    @media (max-width: 54em) {
+      margin-top: 4rem;
+    }
   }
 }

@@ -1,7 +1,7 @@
 import { useState } from "react";
-import servicePrint from "../assets/jpeg/service-print.jpg";
-import serviceHydro from "../assets/jpeg/gallery-4.jfif";
-import serviceMerch from "../assets/jpeg/service-merch.jpg";
+import servicePrint from "../assets/jpeg/service-1.jpg";
+import serviceHydro from "../assets/jpeg/service-2.jpg";
+import serviceMerch from "../assets/jpeg/service-3.jpg";
 import TabContent from "./service-tab";
 import { AnimatePresence } from "framer-motion";
 

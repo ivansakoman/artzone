@@ -13,17 +13,35 @@
     text-align: center;
     margin-bottom: 7rem;
     margin-top: 2rem;
+
+    @media (max-width: 64em) {
+      font-size: 64px;
+      margin-bottom: 3rem;
+      margin-top: 0rem;
+    }
   }
   &__info {
     display: flex;
     justify-content: center;
     gap: 3rem;
     color: var(--color-black);
+
+    @media (max-width: 64em) {
+      flex-direction: column;
+    }
+
     &--data {
       font-size: 32px;
       font-weight: 600;
       line-height: 175%;
       letter-spacing: 0.5px;
+      @media (max-width: 64em) {
+        text-align: center;
+      }
+    }
+    &--btn {
+      display: flex;
+      align-self: center;
     }
   }
   &__btn {
@@ -39,6 +57,10 @@
     transition: all 450ms ease-in-out;
     font-weight: 900;
     text-decoration: none;
+
+    @media (max-width: 50em) {
+      font-size: 64px;
+    }
 
     &:hover {
       &::before {

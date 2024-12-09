@@ -30,7 +30,7 @@ const Home = () => {
       </section>
       <div className="slider__wrapper">
         <Slider />
-        <div>
+        <div className="slider__content">
           <h1 className="slider__title">Our work</h1>
           <p className="slider__description">
             Artzone offers custom t-shirt prints, all kinds of prints, 3D

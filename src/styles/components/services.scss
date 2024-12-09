@@ -2,13 +2,20 @@
   &__wrapper {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 2rem;
-    margin-bottom: 20rem;
+    padding: 0 1rem;
+    margin-bottom: 16rem;
+    @media (max-width: 54em) {
+      margin-bottom: 6rem;
+    }
   }
   &__item {
     display: grid;
     gap: 4rem;
     grid-template-columns: repeat(2, 1fr);
+
+    @media (max-width: 64em) {
+      grid-template-columns: repeat(1, 1fr);
+    }
 
     &__img {
       position: relative;
@@ -17,6 +24,12 @@
   }
   &__title {
     font-size: var(--font-size-xl);
+    margin-top: 0;
+
+    @media (max-width: 64em) {
+      font-size: var(--font-size-lg);
+      margin-bottom: 1rem;
+    }
   }
   &__description {
     font-size: var(--font-size-md);
