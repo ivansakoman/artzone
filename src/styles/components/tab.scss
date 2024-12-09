@@ -23,10 +23,10 @@
     @media (max-width: 54em) {
       font-size: 36px;
 
-      &:first-child {
+      &:first-of-type {
         margin-left: 2rem;
       }
-      &:last-child {
+      &:last-of-type {
         margin-right: 2rem;
       }
     }
