@@ -17,7 +17,7 @@ const Home = () => {
           <div className="home__title type--orbitron">ARTZONE</div>
           <div className="home__subtitle">- Coming soon -</div>
           <div className="home__social">
-            <a href="https://www.instagram.com/_artz0ne__/">
+            <a href="https://www.instagram.com/_artzonedesign_">
               <img src={instagram} alt="instagram social link" />
             </a>
             <a href="https://www.facebook.com/mada7aka">
