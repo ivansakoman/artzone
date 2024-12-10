@@ -17,10 +17,10 @@ const Home = () => {
           <div className="home__title type--orbitron">ARTZONE</div>
           <div className="home__subtitle">- Coming soon -</div>
           <div className="home__social">
-            <a href="https://www.instagram.com/_artzonedesign_">
+            <a href="https://www.instagram.com/_artzonedesign_" target="_blank">
               <img src={instagram} alt="instagram social link" />
             </a>
-            <a href="https://www.facebook.com/mada7aka">
+            <a href="https://www.facebook.com/mada7aka" target="_blank">
               <img src={facebook} alt="facebook social link" />
             </a>
             <a href="mailto:info.artzonedesign@gmail.com">
