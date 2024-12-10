@@ -16,7 +16,7 @@ export type ServiceType = {
 const data: ServiceType[] = [
   {
     id: "hidrografika",
-    tab: "HIDROGRAGIKA",
+    tab: "HIDROGRAFIKA",
     img: serviceHydro,
     title: "Hidrografika – transformacija površina u umjetnička djela!",
     description:
