@@ -1,6 +1,8 @@
 import Artzone from "../assets/svg/artzone";
 import ParallaxText from "../components/parallax-text";
 import facebook from "../assets/png/facebook.png";
+import phone from "../assets/png/phone.png";
+import mail from "../assets/png/mail.png";
 import instagram from "../assets/png/instagram.png";
 import Slider from "../components/slider";
 import Services from "../components/services";
@@ -21,12 +23,18 @@ const Home = () => {
             <a href="https://www.facebook.com/mada7aka">
               <img src={facebook} alt="facebook social link" />
             </a>
+            <a href="mailto:info.artzonedesign@gmail.com">
+              <img src={mail} alt="facebook social link" />
+            </a>
+            <a href="tel:+385993317628">
+              <img src={phone} alt="facebook social link" />
+            </a>
           </div>
         </div>
       </div>
       <section className="parallax__wrapper">
-        <ParallaxText baseVelocity={-3}>Coming soon</ParallaxText>
-        <ParallaxText baseVelocity={3}>Print i Hidrografika</ParallaxText>
+        <ParallaxText baseVelocity={-1.5}>Coming soon</ParallaxText>
+        <ParallaxText baseVelocity={1.5}>Print i Hidrografika</ParallaxText>
       </section>
       <div className="slider__wrapper">
         <Slider />

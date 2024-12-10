@@ -43,11 +43,21 @@ const data: ServiceType[] = [
 const Services = () => {
   const [activeTab, setActiveTab] = useState<ServiceType>(data[0]);
 
-  const handleActiveTab = (activeId: string) => {
+  const handleActiveTab = (
+    activeId: string,
+    event: React.MouseEvent<HTMLDivElement>
+  ) => {
     const currentItem = data.find((item) => item.id === activeId);
     console.log(currentItem);
     if (currentItem) {
       setActiveTab(currentItem);
+      // Scroll the clicked item into view
+      const clickedElement = event.currentTarget;
+      clickedElement.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest", // Ensure no vertical scrolling happens
+        inline: "start", // Align to the start horizontally
+      });
     } else {
       alert("Ovaj tab nije pronađen");
     }
@@ -58,16 +68,15 @@ const Services = () => {
       <div className="tab">
         {data.map((service) => {
           return (
-            <>
-              <div
-                className={`tab__item ${
-                  service.id === activeTab.id ? "active" : ""
-                }`}
-                onClick={() => handleActiveTab(service.id)}
-              >
-                {service.tab}
-              </div>
-            </>
+            <div
+              key={service.id}
+              className={`tab__item ${
+                service.id === activeTab.id ? "active" : ""
+              }`}
+              onClick={(e) => handleActiveTab(service.id, e)}
+            >
+              {service.tab}
+            </div>
           );
         })}
       </div>

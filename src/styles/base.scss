@@ -1,5 +1,9 @@
 * {
   box-sizing: border-box;
+  &::selection {
+    color: var(--color-black);
+    background: var(--color-yellow-400);
+  }
 }
 body {
   margin: 0;

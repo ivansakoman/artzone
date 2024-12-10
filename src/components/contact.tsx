@@ -7,8 +7,10 @@ const Contact = () => {
           <div className="contact__info">
             <div className="contact__info--data">
               <div>Matej Štetić</div>
-              <div>0993317628</div>
-              <div>info.artzonedesign@gmail.com</div>
+              <div className="contact__typo-animation">0993317628</div>
+              <div className="contact__typo-animation">
+                info.artzonedesign@gmail.com
+              </div>
               <div>Kantrovci 15, 34330 Velika</div>
             </div>
             <div className="contact__info--btn">
