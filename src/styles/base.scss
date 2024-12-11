@@ -77,3 +77,61 @@ img {
 
 //pages
 @import "./pages/home.scss";
+
+.section {
+  --cursorWidth: 7.5rem;
+  position: relative;
+  cursor: pointer;
+  overflow: visible;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+
+  &__cursor {
+    z-index: 9;
+    position: absolute;
+    width: var(--cursorWidth);
+    height: var(--cursorWidth);
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin: calc(var(--cursorWidth) / -2) 0 0 calc(var(--cursorWidth) / -2);
+    user-select: none;
+    pointer-events: none;
+
+    &__black {
+      z-index: 10000;
+      position: absolute;
+      width: var(--cursorWidth);
+      height: var(--cursorWidth);
+
+      align-items: center;
+      justify-content: center;
+      margin: calc(var(--cursorWidth) / -2) 0 0 calc(var(--cursorWidth) / -2);
+      user-select: none;
+      pointer-events: none;
+    }
+
+    &__content {
+      z-index: 2;
+      text-align: center;
+    }
+    &__svg {
+      z-index: 1;
+      position: absolute;
+    }
+    &__image {
+      // background-color: #909293;
+      position: absolute;
+      width: 48rem;
+      height: 30rem;
+      overflow: hidden;
+
+      &Item {
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+    }
+  }
+}

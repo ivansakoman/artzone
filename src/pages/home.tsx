@@ -1,5 +1,4 @@
 import Artzone from "../assets/svg/artzone";
-import ParallaxText from "../components/parallax-text";
 import facebook from "../assets/png/facebook.png";
 import phone from "../assets/png/phone.png";
 import mail from "../assets/png/mail.png";
@@ -7,11 +6,13 @@ import instagram from "../assets/png/instagram.png";
 import Slider from "../components/slider";
 import Services from "../components/services";
 import Contact from "../components/contact";
+import Logo3D from "../components/scene";
 
 const Home = () => {
   return (
     <>
       <div className="home">
+        <Logo3D />
         <Artzone className="home__img" />
         <div className="home__text">
           <div className="home__title type--orbitron">ARTZONE</div>
@@ -32,10 +33,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <section className="parallax__wrapper">
-        <ParallaxText baseVelocity={-1.5}>Coming soon</ParallaxText>
-        <ParallaxText baseVelocity={1.5}>Print i Hidrografika</ParallaxText>
-      </section>
+
       <div className="slider__wrapper">
         <Slider />
         <div className="slider__content">
