@@ -77,3 +77,15 @@ img {
 
 //pages
 @import "./pages/home.scss";
+
+//HC code
+.hide-element {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.1px;
+  height: 0.1px;
+  user-select: none;
+}

@@ -12,30 +12,39 @@ const Home = () => {
   return (
     <>
       <div className="home">
+        <a href="#pocetna" className="hide-element">
+          Početna
+        </a>
         <Artzone className="home__img" />
         <div className="home__text">
           <div className="home__title type--orbitron">ARTZONE</div>
           <div className="home__subtitle">- Coming soon -</div>
           <div className="home__social">
             <a href="https://www.instagram.com/_artzonedesign_" target="_blank">
-              <img src={instagram} alt="instagram social link" />
+              <img src={instagram} alt="instagram social link - Artzone" />
             </a>
             <a href="https://www.facebook.com/mada7aka" target="_blank">
-              <img src={facebook} alt="facebook social link" />
+              <img src={facebook} alt="facebook social link - Artzone" />
             </a>
             <a href="mailto:info.artzonedesign@gmail.com">
-              <img src={mail} alt="facebook social link" />
+              <img src={mail} alt="Contact me with mail - Artzone" />
             </a>
             <a href="tel:+385993317628">
-              <img src={phone} alt="facebook social link" />
+              <img src={phone} alt="Contact me with phone - Artzone" />
             </a>
           </div>
         </div>
       </div>
+      <a href="#novosti" className="hide-element">
+        Novosti
+      </a>
       <section className="parallax__wrapper">
         <ParallaxText baseVelocity={-1.5}>Coming soon</ParallaxText>
         <ParallaxText baseVelocity={1.5}>Print i Hidrografika</ParallaxText>
       </section>
+      <a href="#o-nama" className="hide-element">
+        O nama
+      </a>
       <div className="slider__wrapper">
         <Slider />
         <div className="slider__content">
@@ -50,7 +59,13 @@ const Home = () => {
           </p>
         </div>
       </div>
+      <a href="#usluge" className="hide-element">
+        Usluge
+      </a>
       <Services />
+      <a href="#kontakt" className="hide-element">
+        Kontakt
+      </a>
       <Contact />
     </>
   );

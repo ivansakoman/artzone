@@ -16,21 +16,37 @@ const Slider = () => {
       grabCursor={true}
       modules={[EffectCards]}
       className="mySwiper"
-      onActiveIndexChange={(test) => {
-        console.log(test);
+      onActiveIndexChange={(index) => {
+        console.log("activeSlide:", index);
       }}
     >
       <SwiperSlide className="slider__slide">
-        <img className="slider__img" src={slika1} alt="hidrografika primjer" />
+        <img
+          className="slider__img"
+          src={slika1}
+          alt="Primjer hidrografike - Artzone"
+        />
       </SwiperSlide>
       <SwiperSlide className="slider__slide">
-        <img className="slider__img" src={slika2} alt="hidrografika primjer" />
+        <img
+          className="slider__img"
+          src={slika2}
+          alt="Primjer hidrografike - Artzone"
+        />
       </SwiperSlide>
       <SwiperSlide className="slider__slide">
-        <img className="slider__img" src={slika3} alt="hidrografika primjer" />
+        <img
+          className="slider__img"
+          src={slika3}
+          alt="Primjer hidrografike - Artzone"
+        />
       </SwiperSlide>
       <SwiperSlide className="slider__slide">
-        <img className="slider__img" src={slika4} alt="hidrografika primjer" />
+        <img
+          className="slider__img"
+          src={slika4}
+          alt="Primjer hidrografike - Artzone"
+        />
       </SwiperSlide>
     </Swiper>
   );
