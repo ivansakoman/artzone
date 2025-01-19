@@ -18,7 +18,6 @@ const Home = () => {
         <Artzone className="home__img" />
         <div className="home__text">
           <div className="home__title type--orbitron">ARTZONE</div>
-          <div className="home__subtitle">- Coming soon -</div>
           <div className="home__social">
             <a href="https://www.instagram.com/_artzonedesign_" target="_blank">
               <img src={instagram} alt="instagram social link - Artzone" />
@@ -39,8 +38,8 @@ const Home = () => {
         Novosti
       </a>
       <section className="parallax__wrapper">
-        <ParallaxText baseVelocity={-1.5}>Coming soon</ParallaxText>
-        <ParallaxText baseVelocity={1.5}>Print i Hidrografika</ParallaxText>
+        <ParallaxText baseVelocity={-1.5}>sublimacije & 3D print</ParallaxText>
+        <ParallaxText baseVelocity={1.5}>Print & Hidrografika</ParallaxText>
       </section>
       <a href="#o-nama" className="hide-element">
         O nama
