@@ -17,18 +17,29 @@ const Home = () => {
         </a>
         <Artzone className="home__img" />
         <div className="home__text">
-          <div className="home__title type--orbitron">ARTZONE</div>
+          <div className="home__title type--orbitron">ART ZONE DESIGN</div>
           <div className="home__social">
-            <a href="https://www.instagram.com/_artzonedesign_" target="_blank">
+            <a
+              className="home__social__link"
+              href="https://www.instagram.com/_artzonedesign_"
+              target="_blank"
+            >
               <img src={instagram} alt="instagram social link - Artzone" />
             </a>
-            <a href="https://www.facebook.com/mada7aka" target="_blank">
+            <a
+              className="home__social__link"
+              href="https://www.facebook.com/mada7aka"
+              target="_blank"
+            >
               <img src={facebook} alt="facebook social link - Artzone" />
             </a>
-            <a href="mailto:info.artzonedesign@gmail.com">
+            <a
+              className="home__social__link"
+              href="mailto:info.artzonedesign@gmail.com"
+            >
               <img src={mail} alt="Contact me with mail - Artzone" />
             </a>
-            <a href="tel:+385993317628">
+            <a className="home__social__link" href="tel:+385993317628">
               <img src={phone} alt="Contact me with phone - Artzone" />
             </a>
           </div>

@@ -7,13 +7,13 @@
   54%,
   56%,
   100% {
-    filter: drop-shadow(0 0 2rem var(--color-pantone-400));
+    filter: drop-shadow(0 0 2rem #888);
   }
 
   20%,
   24%,
   55% {
-    filter: drop-shadow(0 0 0 var(--color-pantone-400));
+    filter: drop-shadow(0 0 0 #888);
   }
 }
 
@@ -29,9 +29,9 @@
     margin: 0 auto;
     max-height: 50vh;
     max-width: 50%;
-    color: var(--color-pantone-400);
+    color: #252525;
     path {
-      animation: flicker 1.5s infinite alternate;
+      filter: drop-shadow(0 0 2rem var(--color-gray-400));
     }
   }
   &__text {
@@ -53,7 +53,7 @@
       left: 0;
       width: 0;
       height: 2px;
-      background-color: var(--color-white);
+      background-color: var(--color-black);
       transition: all 250ms ease-in-out;
     }
     &:hover {
@@ -77,7 +77,6 @@
       width: 2rem;
       cursor: pointer;
       transition: all 250ms ease-in-out;
-      filter: invert(1);
       &:hover {
         transform: scale(1.3);
       }
