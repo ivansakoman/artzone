@@ -7,6 +7,7 @@ import instagram from "../assets/png/instagram.png";
 import Slider from "../components/slider";
 import Services from "../components/services";
 import Contact from "../components/contact";
+import deliveryTruck from "../assets/gif/delivery-truck.gif";
 
 const Home = () => {
   return (
@@ -84,6 +85,16 @@ const Home = () => {
         Kontakt
       </a>
       <Contact />
+      <div className="delivery">
+        <div className="delivery__wrapper">
+          <img
+            className="delivery__gif"
+            src={deliveryTruck}
+            alt="Delivery truck"
+          />
+          <div className="delivery__title">ŠHIPING ? HR</div>
+        </div>
+      </div>
     </>
   );
 };

@@ -1,0 +1,21 @@
+.delivery {
+  background-color: white;
+  padding: 4rem;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    justify-content: center;
+    @media (max-width: 64em) {
+      flex-direction: column;
+    }
+  }
+  &__gif {
+    width: 200px;
+    filter: hue-rotate(240deg) brightness(1.2);
+  }
+  &__title {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+}
