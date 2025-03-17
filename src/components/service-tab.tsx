@@ -1,5 +1,5 @@
 import { ServiceType } from "./services";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 type Props = {
   data: ServiceType;
@@ -21,7 +21,7 @@ const TabContent = ({ data }: Props) => {
     visible: { opacity: 1, x: 0 },
   };
   return (
-    <div className="services__item">
+    <div className="services__item" key={data.id}>
       <motion.div
         key={data.title}
         variants={variantsText}
@@ -33,19 +33,27 @@ const TabContent = ({ data }: Props) => {
         <h1 className="services__title">{data.title}</h1>
         <div className="services__description">{data.description}</div>
       </motion.div>
-      <div className="services__item__img">
-        <motion.img
-          loading="eager"
-          key={data.id}
-          src={data.img}
+      <AnimatePresence>
+        <motion.div
           variants={variants}
           initial="hidden"
           animate="visible"
           exit="hidden"
-          className="services__img"
+          className="services__item__img"
           transition={{ type: "spring", bounce: 0.05 }}
-        />
-      </div>
+        >
+          {data.img.map((img, index) => {
+            return (
+              <img
+                key={index}
+                loading="eager"
+                src={img}
+                className="services__img"
+              />
+            );
+          })}
+        </motion.div>
+      </AnimatePresence>
     </div>
   );
 };

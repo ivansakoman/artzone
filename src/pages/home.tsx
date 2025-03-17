@@ -11,47 +11,55 @@ import Contact from "../components/contact";
 const Home = () => {
   return (
     <>
-      <div className="home">
-        <a href="#pocetna" className="hide-element">
-          Početna
-        </a>
-        <Artzone className="home__img" />
-        <div className="home__text">
-          <div className="home__title type--orbitron">ART ZONE DESIGN</div>
-          <div className="home__social">
-            <a
-              className="home__social__link"
-              href="https://www.instagram.com/_artzonedesign_"
-              target="_blank"
-            >
-              <img src={instagram} alt="instagram social link - Artzone" />
-            </a>
-            <a
-              className="home__social__link"
-              href="https://www.facebook.com/mada7aka"
-              target="_blank"
-            >
-              <img src={facebook} alt="facebook social link - Artzone" />
-            </a>
-            <a
-              className="home__social__link"
-              href="mailto:info.artzonedesign@gmail.com"
-            >
-              <img src={mail} alt="Contact me with mail - Artzone" />
-            </a>
-            <a className="home__social__link" href="tel:+385993317628">
-              <img src={phone} alt="Contact me with phone - Artzone" />
-            </a>
+      <div className="home--pattern">
+        <div className="home">
+          <a href="#pocetna" className="hide-element">
+            Početna
+          </a>
+          <Artzone className="home__img" />
+          <div className="home__text">
+            <div className="home__title type--orbitron">ART ZONE DESIGN</div>
+            <div className="home__social">
+              <a
+                className="home__social__link"
+                href="https://www.instagram.com/_artzonedesign_"
+                target="_blank"
+              >
+                <img src={instagram} alt="instagram social link - Artzone" />
+              </a>
+              <a
+                className="home__social__link"
+                href="https://www.facebook.com/mada7aka"
+                target="_blank"
+              >
+                <img src={facebook} alt="facebook social link - Artzone" />
+              </a>
+              <a
+                className="home__social__link"
+                href="mailto:info.artzonedesign@gmail.com"
+              >
+                <img src={mail} alt="Contact me with mail - Artzone" />
+              </a>
+              <a className="home__social__link" href="tel:+385993317628">
+                <img src={phone} alt="Contact me with phone - Artzone" />
+              </a>
+            </div>
           </div>
         </div>
+        <a href="#novosti" className="hide-element">
+          Novosti
+        </a>
+        <section className="parallax__wrapper">
+          <ParallaxText baseVelocity={-1.5}>
+            sublimacije & 3D print
+          </ParallaxText>
+          <ParallaxText baseVelocity={1.5}>Print & Hidrografika</ParallaxText>
+        </section>
       </div>
-      <a href="#novosti" className="hide-element">
-        Novosti
+      <a href="#usluge" className="hide-element">
+        Usluge
       </a>
-      <section className="parallax__wrapper">
-        <ParallaxText baseVelocity={-1.5}>sublimacije & 3D print</ParallaxText>
-        <ParallaxText baseVelocity={1.5}>Print & Hidrografika</ParallaxText>
-      </section>
+      <Services />
       <a href="#o-nama" className="hide-element">
         O nama
       </a>
@@ -69,10 +77,7 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <a href="#usluge" className="hide-element">
-        Usluge
-      </a>
-      <Services />
+
       <a href="#kontakt" className="hide-element">
         Kontakt
       </a>

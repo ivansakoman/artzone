@@ -10,16 +10,17 @@
   }
   &__item {
     display: grid;
-    gap: 4rem;
-    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    grid-template-columns: 2fr 3fr;
 
     @media (max-width: 64em) {
       grid-template-columns: repeat(1, 1fr);
     }
 
     &__img {
-      position: relative;
-      height: 500px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
     }
   }
   &__title {
@@ -35,12 +36,10 @@
     font-size: var(--font-size-md);
   }
   &__img {
+    border-radius: 1rem;
     display: block;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 500px;
+
+    height: 300px;
     object-fit: cover;
   }
 }
