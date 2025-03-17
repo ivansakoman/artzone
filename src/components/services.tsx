@@ -37,7 +37,7 @@ import sub6 from "../assets/jpeg/sublimacije/sub-6.jpg";
 import sub7 from "../assets/jpeg/sublimacije/sub-7.jpg";
 // import sub8 from "../assets/jpeg/sublimacije/sub-8.mp4";
 
-import nalje1 from "../assets/jpeg/naljepnice/nalje-1.jpg";
+// import nalje1 from "../assets/jpeg/naljepnice/nalje-1.jpg";
 import nalje2 from "../assets/jpeg/naljepnice/nalje-2.jpg";
 import nalje3 from "../assets/jpeg/naljepnice/nalje-3.jpg";
 import nalje4 from "../assets/jpeg/naljepnice/nalje-4.jpg";
