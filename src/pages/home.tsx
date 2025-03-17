@@ -18,7 +18,7 @@ const Home = () => {
           </a>
           <Artzone className="home__img" />
           <div className="home__text">
-            <div className="home__title type--orbitron ">
+            <div className="home__title type--orbitron">
               ART ZONE <br /> DESIGN
             </div>
             <div className="home__social">
