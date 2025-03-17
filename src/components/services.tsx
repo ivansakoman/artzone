@@ -76,6 +76,14 @@ const data: ServiceType[] = [
       "Hidrografika ili prijenos vode je tehnika koja omogućuje personalizaciju gotovo bilo koje površine. Bez obzira na to želite li unikatni dizajn za auto dijelove, kacige, kućanske predmete ili namještaj – mi smo tu da ispunimo vašu viziju!",
   },
   {
+    id: "stickers",
+    tab: "STICKERS",
+    img: [nalje2, nalje3, nalje4, nalje5, nalje6, nalje7, nalje8],
+    title: "Naljepnice – kreativnost koja se lijepi svuda!",
+    description:
+      "Naljepnice donose jedinstven način za izražavanje vašeg stila ili promociju brenda. Bilo da su za vozila, proizvode, ili dekoraciju prostora, nudimo izdržljive i živopisne naljepnice prilagođene vašim željama!",
+  },
+  {
     id: "print",
     tab: "PRINT",
     img: [
@@ -101,14 +109,7 @@ const data: ServiceType[] = [
     description:
       "Tehnologija sublimacije omogućuje trajni prijenos slike na predmete kao što su keramika, tekstil i metal. Idealno za personalizirane poklone, reklamne proizvode ili dekoracije!",
   },
-  {
-    id: "laser",
-    tab: "LASER",
-    img: [serviceHydro], // Replace with the appropriate image for LASER
-    title: "Lasersko graviranje – preciznost na svakom materijalu!",
-    description:
-      "Lasersko graviranje omogućuje precizno i trajno graviranje na raznim materijalima kao što su drvo, metal, plastika i staklo. Idealan je za personalizirane poklone, oznake i dekoracije koje ostavljaju dojam.",
-  },
+
   {
     id: "3d-print",
     tab: "3D PRINT",
@@ -118,12 +119,12 @@ const data: ServiceType[] = [
       "Uz 3D print možete ostvariti svoje ideje i dizajne u stvarnosti. Idealno za prototipe, prilagođene dijelove i kreativne projekte. Kvalitetni materijali i precizna tehnologija osiguravaju izdržljivost i detalje.",
   },
   {
-    id: "stickers",
-    tab: "STICKERS",
-    img: [nalje2, nalje3, nalje4, nalje5, nalje6, nalje7, nalje8],
-    title: "Naljepnice – kreativnost koja se lijepi svuda!",
+    id: "laser",
+    tab: "LASER",
+    img: [serviceHydro], // Replace with the appropriate image for LASER
+    title: "Lasersko graviranje – preciznost na svakom materijalu!",
     description:
-      "Naljepnice donose jedinstven način za izražavanje vašeg stila ili promociju brenda. Bilo da su za vozila, proizvode, ili dekoraciju prostora, nudimo izdržljive i živopisne naljepnice prilagođene vašim željama!",
+      "Lasersko graviranje omogućuje precizno i trajno graviranje na raznim materijalima kao što su drvo, metal, plastika i staklo. Idealan je za personalizirane poklone, oznake i dekoracije koje ostavljaju dojam.",
   },
 ];
 
