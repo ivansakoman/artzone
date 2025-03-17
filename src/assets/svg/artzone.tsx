@@ -1,11 +1,13 @@
 type Props = {
   className?: string;
+  width?: number;
 };
 
-const Artzone = ({ className }: Props) => {
+const Artzone = ({ className, width }: Props) => {
   return (
     <>
       <svg
+        widths={width}
         className={className}
         width="1647"
         viewBox="0 0 1647 1258"
